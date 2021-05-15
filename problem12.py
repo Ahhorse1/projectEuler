@@ -1,10 +1,21 @@
-def factorCounter(a):
-    counter = 0
-    for i in range(1,a+1):
-        if a%i == 0:
-            counter = counter + 1
-    return counter
+import math
 
+def factorCounter(num):
+
+def isPrime(num):
+    if num <= 3:
+        return True
+    
+    for i in range(3,math.sqrt(num), 2):
+        if num%i == 0:
+            return False
+    
+    return True
+
+
+
+def calculateTriangleNumber(n):
+    return (n+(n+1))/2
 
 foundTriangleNumber = False
 j = 1
